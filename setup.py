@@ -10,7 +10,7 @@ import setuptools
 from numpy.distutils.core import setup
 
 version = "0.1"
-with open(os.path.join('methods_encoding_model', '__init__.py'), 'r') as fid:
+with open(os.path.join('paper-encoding_decoding_electrophysiology', '__init__.py'), 'r') as fid:
     for line in (line.strip() for line in fid):
         if line.startswith('__version__'):
             version = line.split('=')[1].strip().strip('\'')
@@ -21,13 +21,13 @@ if version is None:
 
 descr = """Tools for analyzing electrocorticography data."""
 
-DISTNAME = 'methods_encoding_model'
+DISTNAME = 'paper-encoding_decoding_electrophysiology'
 DESCRIPTION = descr
 MAINTAINER = 'Chris Holdgraf'
 MAINTAINER_EMAIL = 'choldgraf@gmail.com'
-URL = 'https://github.com/choldgraf/methods_encoding_model'
+URL = 'https://github.com/choldgraf/paper-encoding_decoding_electrophysiology'
 LICENSE = 'BSD (3-clause)'
-DOWNLOAD_URL = 'https://github.com/choldgraf/methods_encoding_model'
+DOWNLOAD_URL = 'https://github.com/choldgraf/paper-encoding_decoding_electrophysiology'
 VERSION = version
 
 
@@ -54,6 +54,6 @@ if __name__ == "__main__":
                        'Topic :: Scientific/Engineering',
                        'Operating System :: OSX'],
           platforms='any',
-          packages=['methods_encoding_model'],
+          packages=['paper-encoding_decoding_electrophysiology'],
           package_data={},
           scripts=[])
