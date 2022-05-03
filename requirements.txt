@@ -3,7 +3,7 @@ numpy
 scikit-learn
 matplotlib
 pandas
--U git+https://github.com/mne-tools/mne-python.git#egg=mne
+-e git+https://github.com/mne-tools/mne-python.git
 IPython
 tqdm
 scikit-image
