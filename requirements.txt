@@ -1,4 +1,4 @@
-etuptools
+setuptools
 numpy
 scikit-learn
 matplotlib
