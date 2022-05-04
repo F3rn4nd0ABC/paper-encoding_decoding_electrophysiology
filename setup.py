@@ -10,18 +10,18 @@ import setuptools
 from numpy.distutils.core import setup
 
 version = "0.1"
-#with open(os.path.join('/paper-encoding_decoding_electrophysiology','__init__.py'), 'r') as fid:
- #   for line in (line.strip() for line in fid):
-  #      if line.startswith('__version__'):
-   #         version = line.split('=')[1].strip().strip('\'')
-    #        break
-#if version is None:
- #   raise RuntimeError('Could not determine version')
+with open(os.path.join('modelingtools','__init__.py'), 'r') as fid:
+    for line in (line.strip() for line in fid):
+        if line.startswith('__version__'):
+            version = line.split('=')[1].strip().strip('\'')
+            break
+if version is None:
+    raise RuntimeError('Could not determine version')
 
 
 descr = """Tools for analyzing electrocorticography data."""
 
-DISTNAME = 'paper-encoding_decoding_electrophysiology'
+DISTNAME = 'modelingtools'
 DESCRIPTION = descr
 MAINTAINER = 'Chris Holdgraf'
 MAINTAINER_EMAIL = 'choldgraf@gmail.com'
@@ -54,6 +54,6 @@ if __name__ == "__main__":
                        'Topic :: Scientific/Engineering',
                        'Operating System :: OSX'],
           platforms='any',
-          packages=['paper-encoding_decoding_electrophysiology'],
+          packages=['modelingtools'],
           package_data={},
           scripts=[])
