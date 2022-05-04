@@ -5,7 +5,7 @@ import mne
 from sklearn.preprocessing import scale
 from sklearn.linear_model import Ridge
 from sklearn.metrics import r2_score
-from sklearn import cross_validation as cv
+from sklearn.model_selection import cross_validate as cv
 from itertools import product
 from skimage import filters as flt
 from matplotlib.colors import LinearSegmentedColormap
