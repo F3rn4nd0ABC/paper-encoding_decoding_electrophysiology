@@ -1,9 +1,8 @@
-setuptools
+--update setuptools
 numpy
 scikit-learn
 matplotlib
 pandas
--U pip setuptools
 -e git+https://github.com/mne-tools/mne-python.git#egg=mne
 IPython
 tqdm
