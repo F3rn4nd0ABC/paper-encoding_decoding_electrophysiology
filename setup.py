@@ -10,7 +10,7 @@ import setuptools
 from numpy.distutils.core import setup
 
 version = "0.1"
-with open(os.path.join('paper-encoding_decoding_electrophysiology','__init__.py'), 'r') as fid:
+with open(os.path.join('/paper-encoding_decoding_electrophysiology','__init__.py'), 'r') as fid:
     for line in (line.strip() for line in fid):
         if line.startswith('__version__'):
             version = line.split('=')[1].strip().strip('\'')
