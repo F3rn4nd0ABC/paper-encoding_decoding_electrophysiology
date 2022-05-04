@@ -54,6 +54,6 @@ if __name__ == "__main__":
                        'Topic :: Scientific/Engineering',
                        'Operating System :: OSX'],
           platforms='any',
-          packages=find_packages(),
+          packages=['paper-encoding_decoding_electrophysiology'],
           package_data={},
           scripts=[])
