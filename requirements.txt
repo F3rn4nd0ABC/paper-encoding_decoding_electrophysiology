@@ -1,4 +1,4 @@
---update setuptools
+-U setuptools
 numpy
 scikit-learn
 matplotlib
